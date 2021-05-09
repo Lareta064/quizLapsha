@@ -1,0 +1,28 @@
+$sizes: ("md":767px, "lg":1023px, "xl":1279px);
+@mixin media($minmax, $media) {
+	@each $size, $resolution in $sizes {
+	  @if $media == $size {
+		@media(#{$minmax}-width: $resolution) {
+		  @content;
+		}
+	  }
+	}
+  }
+// @include media("max", "xl"){
+// 	.products-slider{
+// 		width: 880px;
+// 	}
+// 	.products-slider .slider-wrapper{
+// 		margin-left: 10px;
+// 		margin-right: 10px;
+// 	}
+// }
+$headerBg: #EDDECF;
+$bull1: #E1AFAA;
+$bull2: #D7C089;
+$text: #000 ;
+$lightText: rgb(89, 89, 89);
+$scrollIcon: #877F76;
+
+$ffr: 'f37_gingerregular';
+$ffb: 'f37_gingerbold';

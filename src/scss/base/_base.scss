@@ -1,0 +1,18 @@
+.quiz >* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+  } 
+  .quiz{ 
+	  p, h1, h2, h3, h4, ul{
+	  margin: 0;
+	  padding: 0;
+  }
+   h1, h2, h3, h4{margin-bottom: 1em;}
+} 
+
+  input[type="radio"], input[type='checkbox'], input[type="submit"]{
+	  appearance: none;
+	  -moz-appearance: none;
+  -webkit-appearance: none;
+  }
+  

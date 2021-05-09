@@ -1,0 +1,24 @@
+//- include ../mixins/mixins.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="fonts/ginger/fonts.css")
+		link(rel="stylesheet" href="libs/twenty/twentytwenty.css" type="text/css" media="screen" )
+		link(rel="stylesheet", href="css/main.css")
+		title !{title}
+
+	body
+
+		block content
+
+		script(src="libs/jquery/jquery-3.0.0.min.js")
+
+		//====библиотека  TwentyTwenty для эффкта ДО После
+		script(src="libs/twenty/jquery.event.move.js" )
+		script( src="libs/twenty/jquery.twentytwenty.js" )
+		script(src='js/main.js')

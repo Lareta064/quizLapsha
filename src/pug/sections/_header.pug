@@ -1,0 +1,249 @@
+section.quiz
+	h2 Ответьте на вопросы
+	.quiz-content
+		// =========== plate #1 ===========
+		.plate.plate-1
+			.plate-header
+				.plate-header__text
+					p выберите один из вариантов
+				.plate-header__number
+					p 1/7
+			.plate__progress-bar
+				.plate__progress-value
+			.plate-body 
+				.plate-title
+					h3 Для чего нужно видеонаблюдение?
+				.plate-form.plate-cards
+					// одна карточка
+					.plate-cards__item 
+						label.active
+							.label-img
+								img(src="img/2.jpg", alt="img" width="250")
+							input(type="radio" name="cam_purpose")
+							span.fake-radiobutton
+							p для магазина
+					// одна карточка
+					.plate-cards__item
+						label
+							.label-img
+								img(src="img/3.jpg", alt="img" width="250")
+							input(type="radio" name="cam_purpose")
+							span.fake-radiobutton
+							p для офиса
+					// одна карточка
+					.plate-cards__item 
+						label
+							.label-img
+								img(src="img/1.jpg", alt="img" width="250")
+							input(type="radio" name="cam_purpose")
+							span.fake-radiobutton
+							p для загородного дома
+					// одна карточка
+					.plate-cards__item
+						label
+							.label-img
+								img(src="img/4.jpg", alt="img" width="250")
+							input(type="radio" name="cam_purpose")
+							span.fake-radiobutton
+							p другое
+		
+		// =========== plate #2 ===========
+		.plate.plate-2
+			.plate-header
+				.plate-header__text
+					p Сколько камер понадобится?
+				.plate-header__number
+					p 2/7
+			.plate__progress-bar
+				.plate__progress-value
+			.plate-body
+				.plate-title
+					//- h3 Сколько камер понадобится
+				.plate-form.plate-counter 
+					.counter-block
+						button.decrease-btn -
+						input(type="text" name="cam_count" value ="1")
+						button.increase-btn +
+			.plate-footer 
+				button.back-btn Назад
+				button.next-btn Далее
+		
+		// =========== plate #3 ===========
+		.plate.plate-3
+			.plate-header
+				.plate-header__text
+					p Требуется ли монтаж оборудования?
+				.plate-header__number
+					p 3/7
+			.plate__progress-bar
+				.plate__progress-value
+			.plate-body
+				//- .plate-title
+				//- 	h3 Требуется ли монтаж оборудования?
+				.plate-form.plate-row--radio
+					.plate__flex-wrapper
+						label
+							input(type="radio" name="cam_installation" value="yes")
+							.fake-radiobutton
+							span да, требуется
+						label
+							input(type="radio" name="cam_installation" value="no")
+							.fake-radiobutton
+							span нет, не требуется
+			.plate-footer
+				button.back-btn Назад
+				button.next-btn Далее
+
+		// =========== plate #4 ===========
+		.plate.plate-4
+			.plate-header
+				.plate-header__text
+					p Как долго надо хранить записи с видеокамер?
+				.plate-header__number
+					p 4/7
+			.plate__progress-bar
+				.plate__progress-value
+			.plate-body
+				//- .plate-title
+				//- 	h3 Длительность хранения записи с видеокамер?
+				.plate-form
+					.plate-form.plate-cards
+						// одна карточка
+						.plate-cards__item 
+							label.active
+								.label-img
+									img(src="img/7.jpg", alt="img" width="160")
+								input(type="radio" name="longevity")
+								span.fake-radiobutton
+								p 7 дней
+						// одна карточка
+						.plate-cards__item
+							label
+								.label-img
+									img(src="img/14.jpg", alt="img" width="160")
+								input(type="radio" name="longevity")
+								span.fake-radiobutton
+								p 14 дней (рекомендуется)
+						// одна карточка
+						.plate-cards__item 
+							label
+								.label-img
+									img(src="img/30.jpg", alt="img" width="160")
+								input(type="radio" name="longevity")
+								span.fake-radiobutton
+								p 30 дней
+						// одна карточка
+						.plate-cards__item
+							label
+								.label-img
+									img(src="img/save.jpg", alt="img" width="160")
+								input(type="radio" name="longevity")
+								span.fake-radiobutton
+								p затрудняюсь ответить
+			.plate-footer
+				button.back-btn Назад
+				button.next-btn Далее
+		
+		// =========== plate #5 ===========				
+		.plate.plate-5
+			.plate-header
+				.plate-header__text
+					p  Есть ли интернет на объекте?
+				.plate-header__number
+					p 5/7
+			.plate__progress-bar
+				.plate__progress-value
+			.plate-body
+				//- .plate-title
+				//- 	h3 Есть ли интернет на объекте?
+				.plate-form.plate-row--radio
+					.plate__flex-wrapper
+						label
+							input(type="radio" name="cam_imternet" value="yes")
+							.fake-radiobutton
+							span ДА
+						label
+							input(type="radio" name="cam_imternet" value="no")
+							.fake-radiobutton
+							span НЕТ
+			.plate-footer
+				button.back-btn Назад
+				button.next-btn Далее
+		
+		// =========== plate #6 ===========				
+		.plate.plate-6
+			.plate-header
+				.plate-header__text
+					p Выберите себе подарок
+				.plate-header__number
+					p 6/7
+			.plate__progress-bar
+				.plate__progress-value
+			.plate-body 
+				.plate-form.plate-cards
+					// одна карточка
+					.plate-cards__item 
+						label
+							.label-img
+								img(src="img/podarok1.jpg", alt="img" width="250")
+							input(type="radio" name="cam_podarok")
+							span.fake-radiobutton
+							p скидка 10% на монтаж
+					// одна карточка
+					.plate-cards__item
+						label
+							.label-img
+								img(src="img/podarok2.jpg", alt="img" width="250")
+							input(type="radio" name="cam_podarok")
+							span.fake-radiobutton
+							p бесплатня настройка удаленного доступа
+					// одна карточка
+					.plate-cards__item 
+						label
+							.label-img
+								img(src="img/podarok3.jpg", alt="img" width="250")
+							input(type="radio" name="cam_podarok")
+							span.fake-radiobutton
+							p бесплатные материалы по выбору систем видеонаблюдения
+					// одна карточка
+					.plate-cards__item
+						label
+							.label-img
+								img(src="img/podarok4.jpg", alt="img" width="250")
+							input(type="radio" name="cam_podarok")
+							span.fake-radiobutton
+							p бесплатная поворотная IP WI-FI камера
+			.plate-footer
+				button.back-btn Назад
+				button.next-btn Далее
+				// =========== plate #6 ===========				
+		// =========== plate #7 контактная форма ===========	
+		.plate.plate-7
+			.plate-header
+				.plate-header__text
+					p Пожалуйста, заполните форму
+				.plate-header__number
+					p 7/7
+			.plate__progress-bar
+				.plate__progress-value
+			.plate-body 
+				.plate-form.plate-contacts
+					label.form-input
+						input(type="text" name="userName" required placeholder="Ваше имя")
+					label.form-input
+						input(type="text" name="userPhone" required placeholder="Ваш телефон")
+					label.checkbox-input
+						input(type="checkbox" name="politic_agree")
+						.fake-checkbox
+						p Согласен на обработку персональных данных, в соответствии с  #[a.politic-text(href="#") Политикой конфиденциальности]
+			.plate-footer
+				button.back-btn Назад
+				button.next-btn(type="submit") Рассчитать
+			
+		// =========== plate #8 контактная форма ===========
+		.plate.plate-success
+			.plate-header
+				.plate-header__text
+					p Данные успешно отправлены!
+			.plate-body
+				h2 Готовьте бабло!
